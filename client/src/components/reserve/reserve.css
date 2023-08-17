@@ -1,0 +1,91 @@
+/* CSS for reserve component */
+.reserve {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Container for the content inside reserve component */
+.rContainer {
+  max-width: 90%; /* Adjust the maximum width as needed */
+  padding: 50px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+}
+.rClose{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.rItem{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding:20px;
+
+}
+.rInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.rTitle{
+    font-weight: 600;
+}
+.rDesc{
+    font-weight: 300;
+}
+.rMax{
+    font-size: 13px;
+}
+.rPrice{
+    font-weight: 700;
+}
+.rBtn{
+    border: none;
+    padding: 10px 20px;
+    background-color: #0071c2;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 30px;
+}
+.rSelectRooms{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 10px;
+    color: lightblue;
+    font-weight: 700;
+
+}
+.room{
+    display: flex;
+    flex-direction: column;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  /* Adjust the styles for smaller screens */
+  .rContainer {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjust the styles for even smaller screens */
+  .rContainer {
+    max-width: 100%;
+  }
+}
